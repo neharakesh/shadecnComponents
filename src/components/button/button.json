@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button",
+  "type": "registry:component",
+  "title": "Button",
+  "description": "Base button component used across the registry.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/button.tsx",
+      "type": "registry:component",
+      "content": "'use client';\n\nimport * as React from 'react';\n\nexport interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  variant?: 'default' | 'outline';\n  size?: 'sm' | 'md';\n}\n\nexport function Button({ className = '', variant = 'default', size = 'md', ...props }: ButtonProps) {\n  const base = 'inline-flex items-center justify-center rounded-md font-medium transition focus:outline-none focus:ring-2 focus:ring-offset-2';\n\n  const variants = {\n    default: 'bg-black text-white hover:bg-black/90',\n    outline: 'border border-black text-black hover:bg-black/5',\n  };\n\n  const sizes = {\n    sm: 'h-8 px-3 text-sm',\n    md: 'h-10 px-4 text-sm',\n  };\n\n  return (\n    <button className={`${base} ${variants[variant]} ${sizes[size]} ${className}`} {...props} />\n  );\n}\n"
+    }
+  ]
+}

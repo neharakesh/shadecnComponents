@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "acme",
+  "homepage": "https://acme.com",
+  "registryDependencies": [
+    "./components/button/registry.json"
+  ],
+  "items": [
+    {
+      "name": "Anouncement",
+      "type": "registry:block",
+      "title": "Anouncement",
+      "description": "A simple dismissible announcement banner.",
+      "files": [
+        {
+          "path": "src/components/anouncement.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}
