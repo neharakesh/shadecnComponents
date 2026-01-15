@@ -6,7 +6,7 @@
   "description": "A simple dismissible announcement banner.",
   "dependencies": [],
   "registryDependencies": [
-    
+    "button"
   ],
   "files": [
     {
