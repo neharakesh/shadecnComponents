@@ -1,4 +1,4 @@
-import Anouncement from "@/components/anouncement";
+import {Anouncement} from "@/components/anouncement";
 import { Rocket } from "lucide-react";
 
 export default function Page() {
